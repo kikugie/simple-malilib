@@ -1,0 +1,5 @@
+{
+  "testmod.config": "Test Mod Config",
+  "testmod.config.category.test": "Test Category",
+  "testmod.config.category.test.testOption": "A test option"
+}
