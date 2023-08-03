@@ -5,7 +5,6 @@ import fi.dy.masa.malilib.util.Color4f;
 import net.minecraft.util.Formatting;
 import org.apache.commons.lang3.Validate;
 
-import java.util.Collection;
 import java.util.Objects;
 
 public class ColorUtil {

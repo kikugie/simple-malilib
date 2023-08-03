@@ -8,13 +8,12 @@ import fi.dy.masa.malilib.util.FileUtils;
 import fi.dy.masa.malilib.util.JsonUtils;
 
 import java.io.File;
-import java.util.Collection;
 import java.util.List;
 
 public class ConfigHandler implements IConfigHandler {
-    private final String modId;
     public final String configFile;
     public final List<ConfigCategory> categories;
+    private final String modId;
 
 
     public ConfigHandler(String modId, List<ConfigCategory> categories) {

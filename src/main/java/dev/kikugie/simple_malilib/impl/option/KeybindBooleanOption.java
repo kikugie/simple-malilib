@@ -3,7 +3,10 @@ package dev.kikugie.simple_malilib.impl.option;
 import dev.kikugie.simple_malilib.api.util.KeyActionResult;
 import dev.kikugie.simple_malilib.impl.malilib.HotkeyCallback;
 import fi.dy.masa.malilib.config.options.ConfigBooleanHotkeyed;
-import fi.dy.masa.malilib.hotkeys.*;
+import fi.dy.masa.malilib.hotkeys.IHotkeyCallback;
+import fi.dy.masa.malilib.hotkeys.IKeybind;
+import fi.dy.masa.malilib.hotkeys.KeyAction;
+import fi.dy.masa.malilib.hotkeys.KeybindSettings;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

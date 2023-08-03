@@ -19,43 +19,43 @@ public class Options {
     }
 
     public static GenericOption<ConfigBoolean, Boolean> bool(String name, boolean value) {
-        return new GenericOption<>(name, value,  ConfigBoolean::new);
+        return new GenericOption<>(name, value, ConfigBoolean::new);
     }
 
     public static GenericOption<ConfigString, String> string(String name, String value) {
-        return new GenericOption<>(name, value,  ConfigString::new);
+        return new GenericOption<>(name, value, ConfigString::new);
     }
 
     public static <C, T> GenericOption<ConfigStringList, ImmutableList<String>> stringList(String name, ImmutableList<String> values) {
-        return new GenericOption<>(name, values,  ConfigStringList::new);
+        return new GenericOption<>(name, values, ConfigStringList::new);
     }
 
     public static GenericOption<ConfigColor, String> color(String name, int value) {
-        return new GenericOption<>(name, ColorUtil.getHex(value),  ConfigColor::new);
+        return new GenericOption<>(name, ColorUtil.getHex(value), ConfigColor::new);
     }
 
     public static GenericOption<ConfigColor, String> color(String name, Color4f value) {
-        return new GenericOption<>(name, value.toHexString(),  ConfigColor::new);
+        return new GenericOption<>(name, value.toHexString(), ConfigColor::new);
     }
 
     public static GenericOption<ConfigColor, String> color(String name, Formatting value) {
-        return new GenericOption<>(name, ColorUtil.getHex(value),  ConfigColor::new);
+        return new GenericOption<>(name, ColorUtil.getHex(value), ConfigColor::new);
     }
 
     public static GenericOption<ConfigColorList, ImmutableList<Color4f>> colorIntList(String name, Iterable<Integer> values) {
-        return new GenericOption<>(name, ColorUtil.getColors(values),  ConfigColorList::new);
+        return new GenericOption<>(name, ColorUtil.getColors(values), ConfigColorList::new);
     }
 
     public static GenericOption<ConfigColorList, ImmutableList<Color4f>> colorList(String name, ImmutableList<Color4f> values) {
-        return new GenericOption<>(name, values,  ConfigColorList::new);
+        return new GenericOption<>(name, values, ConfigColorList::new);
     }
 
     public static GenericOption<ConfigColorList, ImmutableList<Color4f>> colorFormattingList(String name, Iterable<Formatting> values) {
-        return new GenericOption<>(name, ColorUtil.getFormattingColors(values),  ConfigColorList::new);
+        return new GenericOption<>(name, ColorUtil.getFormattingColors(values), ConfigColorList::new);
     }
 
     public static GenericOption<ConfigOptionList, IConfigOptionListEntry> optionList(String name, IConfigOptionListEntry value) {
-        return new GenericOption<>(name, value,  ConfigOptionList::new);
+        return new GenericOption<>(name, value, ConfigOptionList::new);
     }
 
     public static KeybindOption keybind(String name, String defaultValue) {

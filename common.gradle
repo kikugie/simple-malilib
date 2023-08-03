@@ -216,7 +216,8 @@ modrinth {
 }
 
 githubRelease {
-    token = project.findProperty("githubToken")
+    def probablyToken = project.findProperty("githubToken")
+    token = probablyToken == null ? "" : probablyToken
     owner = project.repo_owner
     repo = project.archives_base_name
     tagName = "v${project.mod_version}"

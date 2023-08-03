@@ -21,6 +21,7 @@ public class KeybindOption extends OptionBuilder<IConfigBase, String> {
     protected IHotkeyCallback callback;
     @Nullable
     protected Function<KeyAction, KeyActionResult> callbackBuilder;
+
     public KeybindOption(String name, String defaultValue) {
         super(name, defaultValue);
     }

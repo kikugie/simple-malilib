@@ -94,5 +94,6 @@ public class ConfigGui extends GuiConfigsBase {
         }
     }
 
-    private record Tab(String name, ConfigCategory category) {}
+    private record Tab(String name, ConfigCategory category) {
+    }
 }
